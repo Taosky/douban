@@ -1,7 +1,7 @@
 version: '3'
 services:
   douban-docker:
-    image: fatesinger/douban:latest
+    image: ghcr.io/taosky/douban:latest
     container_name: douban-docker
     volumes:
       - assets:/app/static
