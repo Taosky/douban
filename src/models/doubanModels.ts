@@ -12,6 +12,7 @@ interface IDoubanSubject {
     pubdate: string;
     year: string;
     status: string;
+    comment: string;
 }
 
 const doubanSchema = new Schema<IDoubanSubject>(
@@ -27,6 +28,7 @@ const doubanSchema = new Schema<IDoubanSubject>(
         pubdate: { type: String, required: false },
         year: { type: String, required: false },
         status: { type: String, required: false },
+        comment: { type: String, required: false },
     },
     {
         timestamps: true,

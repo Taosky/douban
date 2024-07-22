@@ -92,6 +92,7 @@ export const getDoubanSubject = async (id: string, type: ObjectTypes) => {
             pubdate: data.pubdate ? data.pubdate[0] : "",
             year: data.year,
             status: null,
+            comment: null,
         });
         console.log("create new object");
         object = await DoubanSubject.findOne({ subject_id: id, type: type });

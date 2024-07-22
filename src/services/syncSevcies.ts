@@ -29,6 +29,7 @@ export const syncSevices = async (
 
                     if (!dbobject) {
                         console.log(
+                            interet.comment,
                             interet.subject.id,
                             interet.subject.title,
                             interet.subject.card_subtitle,
@@ -62,6 +63,7 @@ export const syncSevices = async (
                                 : "",
                             year: interet.subject.year,
                             status: interet.status,
+                            comment: interet.comment,
                         });
                     } else {
                         if (dbobject.status != interet.status) {
@@ -72,6 +74,7 @@ export const syncSevices = async (
                                 },
                                 {
                                     status: interet.status,
+                                    comment: interet.comment,
                                     create_time: interet.create_time,
                                 }
                             );
